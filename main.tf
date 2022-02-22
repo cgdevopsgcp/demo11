@@ -24,7 +24,7 @@ access_config {
 }
 
 resource "google_storage_bucket" "auto-expire" {
-name = "buckett273"
+name = "buckett132"
 location = "US"
 force_destroy = true
 lifecycle_rule {
