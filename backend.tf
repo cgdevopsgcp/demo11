@@ -1,6 +1,6 @@
 terraform {
   backend "gcs"{
-    bucket      = "bucketbucket273"
+    bucket      = "buckett132"
     prefix      = "dev"
     credentials = "service.json"
   }
