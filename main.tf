@@ -3,7 +3,7 @@ default = "us-central1-a"
 }
 provider "google" {
 credentials = "${file("service.json")}"
-project = "gke-test-341411"
+project = "dev-adapter-3388081"
 region = "${var.region}"
 }
 resource "google_compute_instance" "alphaa" {
@@ -38,7 +38,7 @@ type = "Delete"
 }
 
 resource "google_compute_network" "vpc_network" {
-//  project                 = "training-project-340810" # Replace this with your project ID in quotes
+//  project                 = "dev-adapter-338808" # Replace this with your project ID in quotes
   name                    = "my-auto-node-network"
   auto_create_subnetworks = true
   mtu                     = 1460
