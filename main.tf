@@ -3,7 +3,7 @@ default = "us-central1-a"
 }
 provider "google" {
 credentials = "${file("service.json")}"
-project = "training-project-340810"
+project = "gke-test-341411"
 region = "${var.region}"
 }
 resource "google_compute_instance" "alphaa" {
