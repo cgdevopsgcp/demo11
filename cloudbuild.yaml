@@ -15,10 +15,6 @@ steps:
   args: ['apply', '-auto-approve']
   env:
     - "TF_VAR_project-name=${PROJECT_ID}"
-- name: 'gcr.io/${PROJECT_ID}/terraform'
-  args: ['destroy', '-auto-approve']
-  env:
-    - "TF_VAR_project-name=${PROJECT_ID}"
 substitutions:
-    _BUCKET: # Provide your own bucket name
+    _BUCKET: buckett1122 
 tags: ['cloud-builders-community']
